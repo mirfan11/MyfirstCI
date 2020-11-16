@@ -1718,7 +1718,7 @@ abstract class BaseConnection implements ConnectionInterface
 	 */
 	public function disableForeignKeyChecks()
 	{
-		$sql = $this->_disableForeignKeyChecks();
+		$sql = $this->disableForeignKeyChecks();
 
 		return $this->query($sql);
 	}
@@ -1730,7 +1730,7 @@ abstract class BaseConnection implements ConnectionInterface
 	 */
 	public function enableForeignKeyChecks()
 	{
-		$sql = $this->_enableForeignKeyChecks();
+		$sql = $this->enableForeignKeyChecks();
 
 		return $this->query($sql);
 	}

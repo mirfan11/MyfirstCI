@@ -41,7 +41,7 @@ $routes->get('/mahasiswa',function(){
 	echo view('mahasiswa/index', $data);
 	echo view('mahasiswa/footer');
 });
-
+$routes->get('coba/(:any)/(:num)','Helloworld::index/$1/$2');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
